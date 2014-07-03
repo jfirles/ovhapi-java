@@ -46,18 +46,18 @@ public class TestOvhApi {
 		// json with params
 		String bodyCreateARecord = "{\"fieldType\":\"A\", ... }";
 		jsonResponse = ovhApi.post("/domain/zone/myzone.com/record", bodyCreateARecord);
-		System.out.println("Response creating zone");
+		System.out.println("Response creating zone:\n" + jsonResponse);
 
 		// put
 		// json with params
 		String bodyUpdate = "{ ... }";
 		jsonResponse = ovhApi.put("/domain/zone/myzone.com/record", bodyUpdate);
-		System.out.println("Response updating zone");
+		System.out.println("Response updating zone:\n" + jsonResponse);
 
 		// delete
 		String idToDelete = "905684"
 		jsonResponse = ovhApi.delete("/domain/zone/myzone.com/record/" + idToDelete);
-		System.out.println("Response deleting zone");
+		System.out.println("Response deleting zone:\n" + jsonResponse);
 		
 	}
 }
