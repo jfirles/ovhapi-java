@@ -5,9 +5,15 @@ Very simple Java Helper for OVH REST API
 ## Install
 
 * Clone repository or download zip and unzip it
-`wget https://github.com/jfirles/ovhapi-java/archive/master.zip && unzip master.zip`
+```
+$ wget https://github.com/jfirles/ovhapi-java/archive/master.zip
+$ unzip master.zip
+```
 * Compile and install with maven
-`cd ovhapi-java-master && mvn clean install`
+```
+$ cd ovhapi-java-master
+$ mvn clean install
+```
 * Add dependency to your project
 ```
 <dependency>
